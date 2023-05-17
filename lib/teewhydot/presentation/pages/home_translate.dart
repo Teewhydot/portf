@@ -17,7 +17,6 @@ import 'package:portf/teewhydot/presentation/widgets/reused_widgets/custom_butto
 import 'package:portf/teewhydot/presentation/widgets/reused_widgets/fade_bottom_top_animation.dart';
 import 'package:portf/teewhydot/presentation/widgets/reused_widgets/services_widget.dart';
 
-
 class CustomHomeTranslate extends StatefulWidget {
   const CustomHomeTranslate({super.key});
 
@@ -330,7 +329,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                                             Padding(
                                                 padding: getPadding(right: 45),
                                                 child: Text(
-                                                    "Agency provides a full service range including technical skills, design, business understanding.",
+                                                    "As a seasoned Developer, I possess a comprehensive skill set and invaluable experience that are perfectly suited to tackle your projects with finesse. My journey as a developer has been guided by exceptional coding communities, enabling me to master the craft and excel in executing highly sought-after projects.",
                                                     maxLines: null,
                                                     textAlign: TextAlign.left,
                                                     style: AppStyle.txtText)),
@@ -387,24 +386,11 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                                                 textAlign: TextAlign.left,
                                                 style: AppStyle.txtH5.copyWith(
                                                     letterSpacing:
-                                                        getHorizontalSize(
-                                                            3.0)))),
-                                        const ServicesWidget(
-                                            serviceName: 'Android Apps',
-                                            serviceImage:
-                                                Assets.iconsDesktopIcon),
-                                        const ServicesWidget(
-                                            serviceName: 'IOS Apps',
-                                            serviceImage:
-                                                Assets.iconsDesktopIcon),
-                                        const ServicesWidget(
-                                            serviceName: 'Web Apps',
-                                            serviceImage:
-                                                Assets.iconsDesktopIcon),
-                                        const ServicesWidget(
-                                            serviceName: 'Smart contracts',
-                                            serviceImage:
-                                                Assets.iconsDesktopIcon),
+                                                        getHorizontalSize(3.0)))),
+                                        const ServicesWidget(serviceName: 'Android', serviceIcon: FaIcon(FontAwesomeIcons.android,color: Colors.white,size: 15.0,)),
+                                        const ServicesWidget(serviceName: 'IOS ', serviceIcon: FaIcon(FontAwesomeIcons.appStoreIos,color: Colors.white,size: 15.0,)),
+                                        const ServicesWidget(serviceName: 'Web App', serviceIcon: FaIcon(Icons.web,color: Colors.white,size: 15.0,)),
+                                        const ServicesWidget(serviceName: 'Smart contracts', serviceIcon: FaIcon(FontAwesomeIcons.fileContract,color: Colors.white,size: 15.0,)),
                                       ],
                                     ),
                                   ),
@@ -417,7 +403,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                               FadeBottomTopAnimation(
                                 key: aboutKey,
                                 child: const AboutSection(
-                                    name: 'Teewhy',
+                                    name: 'Abubakar Issa',
                                     photoUrl: Assets.portfolioP1,
                                     techStack: [
                                       'Flutter',

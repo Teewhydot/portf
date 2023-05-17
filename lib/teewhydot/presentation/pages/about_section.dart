@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:portf/teewhydot/domain/theme/app_style.dart';
 import 'package:portf/teewhydot/domain/theme/color_constant.dart';
 import 'package:portf/teewhydot/domain/utils/size_utils.dart';
 import 'package:portf/teewhydot/domain/utils/space_utils.dart';
+import 'package:portf/teewhydot/presentation/widgets/reused_widgets/custom_button.dart';
 
 
 class AboutSection extends StatelessWidget {
@@ -24,9 +26,17 @@ class AboutSection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const SizedBox(height: 32),
-          const CircleAvatar(
-            radius: 55,
-          ),
+         Container(
+           height: 200,
+           width: 170,
+           decoration: BoxDecoration(
+             image: DecorationImage(
+               image: AssetImage(photoUrl),
+               fit: BoxFit.cover,
+             ),
+             borderRadius: BorderRadius.circular(10),
+           ),
+         ),
           addVerticalSpacing(15),
           Text(
             name,
@@ -48,19 +58,130 @@ class AboutSection extends StatelessWidget {
                 )
                 .toList(),
           ),
-          addVerticalSpacing(20),
-          Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: Text(
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis enim sit amet magna dignissim auctor. Integer maximus ultrices arcu, in mollis neque varius at. Aliquam sed fringilla velit. Duis ut mauris et risus fermentum finibus. Nunc id blandit nisi. Nullam eu ipsum vitae arcu volutpat euismod.',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: ColorConstant.whiteA700,
-              ),
+          addVerticalSpacing(38),
+          CustomButton(
+            width: getHorizontalSize(209),
+            height: getSize(55),
+            text: 'Download CV',
+            prefixWidget:  Icon(Icons.download,
+            color: ColorConstant.whiteA700,
             ),
+            onTap: () {},
           ),
+          addVerticalSpacing(98),
+          EducationalHistoryWidget( whatHistory: 'Educational History', educationList: educationList),
+          addVerticalSpacing(50),
+          EducationalHistoryWidget( whatHistory: 'Coding History', educationList: codingHistoryList),
+
         ],
       ),
     );
   }
 }
+
+
+class EducationalHistoryWidget extends StatelessWidget {
+  final List<Education> educationList;
+  final String whatHistory;
+
+  const EducationalHistoryWidget({super.key, required this.educationList,required this.whatHistory});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          whatHistory.toUpperCase(),
+        style: AppStyle.txtH5
+            .copyWith(letterSpacing: getHorizontalSize(3.0),fontSize: 18,fontWeight: FontWeight.normal)
+        ),
+        const SizedBox(height: 10),
+        ListView.builder(
+physics: const NeverScrollableScrollPhysics(),
+          shrinkWrap: true,
+          itemCount: educationList.length,
+          itemBuilder: (context, index) {
+            Education education = educationList[index];
+            return Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              child: ListTile(
+                title: Text(
+                  education.institution.toUpperCase(),
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: ColorConstant.whiteA700,
+                  ),
+                ),
+                subtitle: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      education.degree,
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.normal,
+                        color: ColorConstant.whiteA700,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      education.duration,
+                        style: AppStyle.txtH5
+                            .copyWith(letterSpacing: getHorizontalSize(3.0),fontSize: 14,fontWeight: FontWeight.normal)
+                    ),
+                  ],
+                ),
+              ),
+            );
+          },
+        ),
+      ],
+    );
+  }
+}
+
+class Education {
+  final String institution;
+  final String degree;
+  final String duration;
+
+  const Education({
+    required this.institution,
+    required this.degree,
+    required this.duration,
+  });
+}
+
+List<Education> educationList = [
+  const Education(
+    institution: 'Federal University of Technology, Minna',
+    degree: 'Bachelor of Science in Civil Engineering',
+    duration: '2016 - 2023',
+  ),
+  const Education(
+    institution: 'Dalex Royal College, Ilorin',
+    degree: 'Senior Secondary School Certificate',
+    duration: '2016 - 2018',
+  ),
+];
+
+
+List<Education> codingHistoryList = [
+  const Education(
+    institution: 'Federal University of Technology, Minna',
+    degree: 'C and C++',
+    duration: '2016 - 2023',
+  ),
+  const Education(
+    institution: 'Udemy',
+    degree: 'Flutter Development',
+    duration: '2016 - 2018',
+  ),
+  const Education(
+    institution: 'Udemy',
+    degree: 'Blockchain Development',
+    duration: '2016 - 2018',
+  ),
+];

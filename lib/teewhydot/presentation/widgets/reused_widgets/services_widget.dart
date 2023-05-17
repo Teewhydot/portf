@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portf/teewhydot/domain/theme/app_decoration.dart';
 import 'package:portf/teewhydot/domain/theme/app_style.dart';
 import 'package:portf/teewhydot/domain/theme/color_constant.dart';
@@ -8,9 +9,9 @@ import 'package:portf/teewhydot/domain/utils/space_utils.dart';
 
 class ServicesWidget extends StatelessWidget {
   const ServicesWidget(
-      {super.key, required this.serviceName, required this.serviceImage});
+      {super.key, required this.serviceName, required this.serviceIcon});
   final String serviceName;
-  final String serviceImage;
+  final FaIcon serviceIcon;
   @override
   Widget build(BuildContext context) {
     return Align(
@@ -57,10 +58,10 @@ class ServicesWidget extends StatelessWidget {
                                                           BorderRadiusStyle
                                                               .circleBorder40),
                                               child: Stack(children: [
-                                                Image.asset(serviceImage,
-                                                    height: getSize(28),
-                                                    width: getSize(28),
-                                                    fit: BoxFit.cover),
+                                               Icon(serviceIcon.icon,
+                                                  color: ColorConstant
+                                                      .whiteA700 ,
+                                                  size: getSize(30)),
                                               ]))),
                                       addHorizontalSpacing(10),
                                       Padding(
