@@ -11,9 +11,22 @@ class Portfolio extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CustomHomeTranslate(),
+      home: LayoutBuilder(builder: (BuildContext context,BoxConstraints boxConstraints){
+        if(boxConstraints.maxWidth < 400){
+          return const CustomHomeTranslate();
+        }else {
+          return const Scaffold(
+            body: Center(
+              child: Text("Desktop Version in development", style: TextStyle(
+                fontSize: 30,
+                decoration: TextDecoration.underline
+              ),),
+            ),
+          );
+        }
+      } ),
     );
   }
 }

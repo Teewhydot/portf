@@ -31,7 +31,7 @@ class _ContactSectionState extends State<ContactSection> {
             children: [
               ListTile(
                 leading: CircleAvatar(
-                  radius: 30,
+                  radius: 0,
                   backgroundColor: ColorConstant.deepOrange400,
                   child: Icon(
                     Icons.email,
@@ -46,7 +46,7 @@ class _ContactSectionState extends State<ContactSection> {
               const SizedBox(height: 20),
               ListTile(
                 leading: CircleAvatar(
-                  radius: 30,
+                  radius: 0,
                   backgroundColor: ColorConstant.deepOrange400,
                   child: Icon(
                     Icons.phone,
