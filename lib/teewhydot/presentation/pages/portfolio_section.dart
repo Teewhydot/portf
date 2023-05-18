@@ -19,7 +19,7 @@ class PortfolioSection extends StatelessWidget {
             child: Container(
                 width: double.maxFinite,
                 margin: getMargin(top: 34),
-                padding: getPadding(left: 23, top: 61, right: 23, bottom: 61),
+                padding: getPadding(left: 22, top: 60, right: 21, bottom: 60),
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
