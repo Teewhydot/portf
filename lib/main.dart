@@ -16,7 +16,7 @@ class Portfolio extends StatelessWidget {
       color: ColorConstant.scaffoldColorOne,
       debugShowCheckedModeBanner: false,
       home: LayoutBuilder(builder: (BuildContext context,BoxConstraints boxConstraints){
-        if(boxConstraints.maxWidth < 500){
+        if(boxConstraints.maxWidth < 600){
           return const CustomHomeTranslate();
         }else {
           return const Scaffold(
