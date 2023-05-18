@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portf/teewhydot/domain/theme/app_style.dart';
 import 'package:portf/teewhydot/domain/theme/color_constant.dart';
 import 'package:portf/teewhydot/domain/utils/size_utils.dart';
+import 'package:portf/teewhydot/presentation/widgets/reused_widgets/contact_form.dart';
 import 'package:portf/teewhydot/presentation/widgets/reused_widgets/social_media_container.dart';
 
 
@@ -67,6 +68,7 @@ class _ContactSectionState extends State<ContactSection> {
                     .copyWith(letterSpacing: getHorizontalSize(3.0)),
               ),
               const SizedBox(height: 20),
+              const ContactFormWidget(),
               const SocialMediaContainer(),
               const SizedBox(height: 250),
             ],
