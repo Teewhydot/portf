@@ -14,7 +14,7 @@ class Portfolio extends StatelessWidget {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
       home: LayoutBuilder(builder: (BuildContext context,BoxConstraints boxConstraints){
-        if(boxConstraints.maxWidth < 400){
+        if(boxConstraints.maxWidth < 600){
           return const CustomHomeTranslate();
         }else {
           return const Scaffold(

@@ -25,6 +25,15 @@ class AboutSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          Align(
+              alignment: Alignment.center,
+              child: Text(
+                  "about myself".toUpperCase(),
+                  overflow: TextOverflow.ellipsis,
+                  textAlign: TextAlign.left,
+                  style: AppStyle.txtH5.copyWith(
+                      letterSpacing:
+                      getHorizontalSize(3.0)))),
           const SizedBox(height: 32),
          Container(
            height: 200,

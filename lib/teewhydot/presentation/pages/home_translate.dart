@@ -116,7 +116,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                             ),
                             GestureDetector(
                               onTap: () {
-                                scrollController.animateTo(700.0,
+                                scrollController.animateTo(850.0,
                                     duration: const Duration(milliseconds: 500),
                                     curve: Curves.easeInOutCubic);
                                 _controller.reverse();
@@ -128,7 +128,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                             ),
                             GestureDetector(
                               onTap: () {
-                                scrollController.animateTo(1300.0,
+                                scrollController.animateTo(1550.0,
                                     duration: const Duration(milliseconds: 500),
                                     curve: Curves.easeInOutCubic);
                                 _controller.reverse();
@@ -140,7 +140,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                             ),
                             GestureDetector(
                               onTap: () {
-                                scrollController.animateTo(2200.0,
+                                scrollController.animateTo(2400.0,
                                     duration: const Duration(milliseconds: 500),
                                     curve: Curves.easeInOutCubic);
                                 _controller.reverse();
@@ -152,7 +152,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                             ),
                             GestureDetector(
                               onTap: () {
-                                scrollController.animateTo(2900.0,
+                                scrollController.animateTo(3850.0,
                                     duration: const Duration(milliseconds: 500),
                                     curve: Curves.easeInOutCubic);
                                 _controller.reverse();

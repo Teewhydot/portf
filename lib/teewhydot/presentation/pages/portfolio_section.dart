@@ -21,12 +21,12 @@ class PortfolioSection extends StatelessWidget {
                 margin: getMargin(top: 34),
                 padding: getPadding(left: 23, top: 61, right: 23, bottom: 61),
                 child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Text("Portfolio".toUpperCase(),
                           overflow: TextOverflow.ellipsis,
-                          textAlign: TextAlign.left,
+                          textAlign: TextAlign.center,
                           style: AppStyle.txtH5
                               .copyWith(letterSpacing: getHorizontalSize(3.0))),
                       CustomButton(

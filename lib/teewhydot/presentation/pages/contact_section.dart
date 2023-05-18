@@ -59,17 +59,25 @@ class _ContactSectionState extends State<ContactSection> {
                   style: AppStyle.txtH4WhiteA700.copyWith(fontSize: 15),
                 ),
               ),
-              const SizedBox(height: 75),
+              const SizedBox(height: 150),
               Text(
-                'Social'.toUpperCase(),
+                "send me an email".toUpperCase(),
                 overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.left,
-                style: AppStyle.txtH5
-                    .copyWith(letterSpacing: getHorizontalSize(3.0)),
+                style:
+                AppStyle.txtH5.copyWith(letterSpacing: getHorizontalSize(3.0)),
               ),
-              const SizedBox(height: 20),
               const ContactFormWidget(),
+              const SizedBox(height: 90),
+              Text(
+                "follow me".toUpperCase(),
+                overflow: TextOverflow.ellipsis,
+                textAlign: TextAlign.left,
+                style:
+                AppStyle.txtH5.copyWith(letterSpacing: getHorizontalSize(3.0)),
+              ),
               const SocialMediaContainer(),
+
               const SizedBox(height: 250),
             ],
           )
