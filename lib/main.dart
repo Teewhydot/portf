@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'teewhydot/domain/theme/color_constant.dart';
 import 'teewhydot/presentation/pages/home_translate.dart';
 
 void main() {
@@ -12,6 +13,7 @@ class Portfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
+      color: ColorConstant.scaffoldColorOne,
       debugShowCheckedModeBanner: false,
       home: LayoutBuilder(builder: (BuildContext context,BoxConstraints boxConstraints){
         if(boxConstraints.maxWidth < 500){
