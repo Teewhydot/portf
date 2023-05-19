@@ -46,7 +46,7 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
     },
     {
       'title': 'Medical Klinik',
-      'description': 'Short description of project 2',
+      'description': 'A medical clinic app for booking appointments, built with Flutter',
       'image': Assets.portfolioP2,
       'image2': Assets.portfolioP1,
       'image3': Assets.portfolioP1,
@@ -55,6 +55,15 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
     },
     {
       'title': 'Clone Chat',
+      'description': 'A chatting app for clones of yourself, built with Flutter',
+      'image': Assets.portfolioP2,
+      'image2': Assets.portfolioP1,
+      'image3': Assets.portfolioP1,
+      'github': '',
+      'netlify': '',
+    },
+    {
+      'title': 'RockPaperScissors Game',
       'description': 'Short description of project 2',
       'image': Assets.portfolioP2,
       'image2': Assets.portfolioP1,
@@ -62,7 +71,15 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'github': '',
       'netlify': '',
     },
-    // Add more projects as needed
+    {
+      'title': 'Podcast App',
+      'description': 'A podcast app, built with Flutter',
+      'image': Assets.portfolioP2,
+      'image2': Assets.portfolioP1,
+      'image3': Assets.portfolioP1,
+      'github': '',
+      'netlify': '',
+    },
   ];
 
   @override
