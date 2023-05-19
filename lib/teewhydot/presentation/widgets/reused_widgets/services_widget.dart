@@ -30,9 +30,9 @@ class ServicesWidget extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Padding(
-                                padding: getPadding(top: 1, right: 5),
+                                padding: getPadding(top: 1, right: 5,left: 50),
                                 child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
                                     Icon(serviceIcon.icon,

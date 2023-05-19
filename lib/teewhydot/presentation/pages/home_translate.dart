@@ -449,7 +449,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                                 key: aboutKey,
                                 child: AboutSection(
                                     name: 'Abubakar Issa',
-                                    photoUrl: Assets.portfolioP1,
+                                    photoUrl: Assets.portfolioMe,
                                     effect: _controller.isCompleted
                                         ? const BlurEffect(
                                             duration:
