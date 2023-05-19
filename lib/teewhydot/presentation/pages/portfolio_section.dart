@@ -28,7 +28,7 @@ PortfolioSection({super.key, required this.effect});
                   children: AnimateList(
                     autoPlay: true,
                     interval:
-                    const Duration(milliseconds: 399),
+                    const Duration(milliseconds: 199),
                     effects: [
                       const FadeEffect(
                         duration: Duration(milliseconds: 199),

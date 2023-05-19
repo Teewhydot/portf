@@ -32,7 +32,7 @@ class AboutSection extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: AnimateList(
               autoPlay: true,
-              interval: const Duration(milliseconds: 399),
+              interval: const Duration(milliseconds: 199),
               effects: [
                 const FadeEffect(
                   duration: Duration(milliseconds: 199),
