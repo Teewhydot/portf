@@ -55,6 +55,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
 
   void toggle() =>
       _controller.isDismissed ? _controller.forward() : _controller.reverse();
+
   @override
   void dispose() {
     _controller.dispose();
@@ -375,7 +376,16 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                                         const FadeEffect(
                                           duration: Duration(milliseconds: 199),
                                           curve: Curves.easeIn,
-                                        )
+                                        ),
+                                        _controller.isCompleted
+                                            ? const BlurEffect(
+                                                duration:
+                                                    Duration(milliseconds: 399),
+                                              )
+                                            : const Effect(
+                                                duration:
+                                                    Duration(milliseconds: 399),
+                                              ),
                                       ],
                                       children: [
                                         Align(
@@ -386,11 +396,36 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                                                 textAlign: TextAlign.left,
                                                 style: AppStyle.txtH5.copyWith(
                                                     letterSpacing:
-                                                        getHorizontalSize(3.0)))),
-                                        const ServicesWidget(serviceName: 'Android Apps', serviceIcon: FaIcon(FontAwesomeIcons.android,color: Colors.white,size: 15.0,)),
-                                        const ServicesWidget(serviceName: 'IOS Apps', serviceIcon: FaIcon(FontAwesomeIcons.appStoreIos,color: Colors.white,size: 15.0,)),
-                                        const ServicesWidget(serviceName: 'Web Apps', serviceIcon: FaIcon(Icons.web,color: Colors.white,size: 15.0,)),
-                                        const ServicesWidget(serviceName: 'Smart contracts', serviceIcon: FaIcon(FontAwesomeIcons.fileContract,color: Colors.white,size: 15.0,)),
+                                                        getHorizontalSize(
+                                                            3.0)))),
+                                        const ServicesWidget(
+                                            serviceName: 'Android Apps',
+                                            serviceIcon: FaIcon(
+                                              FontAwesomeIcons.android,
+                                              color: Colors.white,
+                                              size: 15.0,
+                                            )),
+                                        const ServicesWidget(
+                                            serviceName: 'IOS Apps',
+                                            serviceIcon: FaIcon(
+                                              FontAwesomeIcons.appStoreIos,
+                                              color: Colors.white,
+                                              size: 15.0,
+                                            )),
+                                        const ServicesWidget(
+                                            serviceName: 'Web Apps',
+                                            serviceIcon: FaIcon(
+                                              Icons.web,
+                                              color: Colors.white,
+                                              size: 15.0,
+                                            )),
+                                        const ServicesWidget(
+                                            serviceName: 'Smart contracts',
+                                            serviceIcon: FaIcon(
+                                              FontAwesomeIcons.fileContract,
+                                              color: Colors.white,
+                                              size: 15.0,
+                                            )),
                                       ],
                                     ),
                                   ),
@@ -398,16 +433,36 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                               ),
                               FadeBottomTopAnimation(
                                   key: portfolioKey,
-                                  child: const PortfolioSection()),
+                                  child: PortfolioSection(
+                                    effect: _controller.isCompleted
+                                        ? const BlurEffect(
+                                            duration:
+                                                Duration(milliseconds: 399),
+                                          )
+                                        : const Effect(
+                                            duration:
+                                                Duration(milliseconds: 399),
+                                          ),
+                                  )),
                               addVerticalSpacing(250),
                               FadeBottomTopAnimation(
                                 key: aboutKey,
-                                child: const AboutSection(
+                                child: AboutSection(
                                     name: 'Abubakar Issa',
                                     photoUrl: Assets.portfolioP1,
-                                    techStack: [
+                                    effect: _controller.isCompleted
+                                        ? const BlurEffect(
+                                            duration:
+                                                Duration(milliseconds: 399),
+                                          )
+                                        : const Effect(
+                                            duration:
+                                                Duration(milliseconds: 399),
+                                          ),
+                                    techStack: const [
                                       'Flutter',
                                       'Dart',
+                                      'API',
                                       'Firebase',
                                       'Blockchain',
                                       'Solidity',
@@ -415,7 +470,18 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                                     ]),
                               ),
                               addVerticalSpacing(250),
-                              const ContactSection(),
+                              FadeBottomTopAnimation(
+                                key: contactKey,
+                                child: ContactSection(
+                                  effect: _controller.isCompleted
+                                      ? const BlurEffect(
+                                          duration: Duration(milliseconds: 399),
+                                        )
+                                      : const Effect(
+                                          duration: Duration(milliseconds: 399),
+                                        ),
+                                ),
+                              )
                             ],
                           ),
                         )),
