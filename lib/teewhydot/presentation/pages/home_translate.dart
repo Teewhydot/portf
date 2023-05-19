@@ -92,7 +92,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
               children: [
                 // red container
                 SizedBox(
-                  width: 300,
+                  width: getHorizontalSize(300),
                   height: double.infinity,
                   child: Material(
                     color: ColorConstant.scaffoldColorOne,
@@ -117,7 +117,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                             ),
                             GestureDetector(
                               onTap: () {
-                                scrollController.animateTo(850.0,
+                                scrollController.animateTo(getVerticalSize(850),
                                     duration: const Duration(milliseconds: 500),
                                     curve: Curves.easeInOutCubic);
                                 _controller.reverse();
@@ -129,7 +129,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                             ),
                             GestureDetector(
                               onTap: () {
-                                scrollController.animateTo(1550.0,
+                                scrollController.animateTo(getVerticalSize(1550),
                                     duration: const Duration(milliseconds: 500),
                                     curve: Curves.easeInOutCubic);
                                 _controller.reverse();
@@ -141,7 +141,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                             ),
                             GestureDetector(
                               onTap: () {
-                                scrollController.animateTo(2400.0,
+                                scrollController.animateTo(getVerticalSize(2400),
                                     duration: const Duration(milliseconds: 500),
                                     curve: Curves.easeInOutCubic);
                                 _controller.reverse();
@@ -153,7 +153,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                             ),
                             GestureDetector(
                               onTap: () {
-                                scrollController.animateTo(3850.0,
+                                scrollController.animateTo(getVerticalSize(3850),
                                     duration: const Duration(milliseconds: 500),
                                     curve: Curves.easeInOutCubic);
                                 _controller.reverse();
@@ -231,7 +231,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                                       children: AnimateList(
                                           autoPlay: true,
                                           interval:
-                                              const Duration(milliseconds: 399),
+                                              const Duration(milliseconds: 199),
                                           effects: [
                                             const FadeEffect(
                                               duration:
