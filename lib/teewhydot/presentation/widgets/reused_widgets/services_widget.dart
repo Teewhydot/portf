@@ -32,37 +32,13 @@ class ServicesWidget extends StatelessWidget {
                             Padding(
                                 padding: getPadding(top: 1, right: 5),
                                 child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
-                                      Card(
-                                          clipBehavior: Clip.antiAlias,
-                                          elevation: 0,
-                                          margin: const EdgeInsets.all(0),
-                                          color: ColorConstant.deepOrange40001,
-                                          shape: RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(
-                                                      getHorizontalSize(40))),
-                                          child: Container(
-                                              height: getSize(80),
-                                              width: getSize(80),
-                                              padding: getPadding(
-                                                  left: 24,
-                                                  top: 26,
-                                                  right: 24,
-                                                  bottom: 26),
-                                              decoration: AppDecoration
-                                                  .fillDeeporange40001
-                                                  .copyWith(
-                                                      borderRadius:
-                                                          BorderRadiusStyle
-                                                              .circleBorder40),
-                                              child: Stack(children: [
-                                               Icon(serviceIcon.icon,
-                                                  color: ColorConstant
-                                                      .whiteA700 ,
-                                                  size: getSize(30)),
-                                              ]))),
+                                    Icon(serviceIcon.icon,
+                                            color: ColorConstant
+                                                .deepOrange400 ,
+                                            size: getSize(30)),
                                       addHorizontalSpacing(10),
                                       Padding(
                                           padding:

@@ -387,9 +387,9 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                                                 style: AppStyle.txtH5.copyWith(
                                                     letterSpacing:
                                                         getHorizontalSize(3.0)))),
-                                        const ServicesWidget(serviceName: 'Android', serviceIcon: FaIcon(FontAwesomeIcons.android,color: Colors.white,size: 15.0,)),
-                                        const ServicesWidget(serviceName: 'IOS ', serviceIcon: FaIcon(FontAwesomeIcons.appStoreIos,color: Colors.white,size: 15.0,)),
-                                        const ServicesWidget(serviceName: 'Web App', serviceIcon: FaIcon(Icons.web,color: Colors.white,size: 15.0,)),
+                                        const ServicesWidget(serviceName: 'Android Apps', serviceIcon: FaIcon(FontAwesomeIcons.android,color: Colors.white,size: 15.0,)),
+                                        const ServicesWidget(serviceName: 'IOS Apps', serviceIcon: FaIcon(FontAwesomeIcons.appStoreIos,color: Colors.white,size: 15.0,)),
+                                        const ServicesWidget(serviceName: 'Web Apps', serviceIcon: FaIcon(Icons.web,color: Colors.white,size: 15.0,)),
                                         const ServicesWidget(serviceName: 'Smart contracts', serviceIcon: FaIcon(FontAwesomeIcons.fileContract,color: Colors.white,size: 15.0,)),
                                       ],
                                     ),

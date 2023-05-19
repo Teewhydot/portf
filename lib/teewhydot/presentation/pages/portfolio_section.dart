@@ -30,9 +30,9 @@ class PortfolioSection extends StatelessWidget {
                           style: AppStyle.txtH5
                               .copyWith(letterSpacing: getHorizontalSize(3.0))),
                       CustomButton(
-                          height: getVerticalSize(48),
-                          width: getHorizontalSize(270),
-                          text: "Click on any card to view the project"
+                          height: getVerticalSize(38),
+                          width: getHorizontalSize(170),
+                          text: ""
                               .toUpperCase(),
                           margin: getMargin(top: 42, bottom: 42),
                           variant: ButtonVariant.OutlineWhiteA7004b),
