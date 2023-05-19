@@ -5,8 +5,6 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:portf/teewhydot/domain/theme/app_style.dart';
 import 'package:portf/teewhydot/domain/utils/size_utils.dart';
 import 'package:portf/teewhydot/domain/utils/space_utils.dart';
-import 'package:portf/teewhydot/presentation/widgets/reused_widgets/custom_button.dart';
-
 import '../widgets/reused_widgets/portfolio_slider.dart';
 
 
@@ -44,13 +42,6 @@ PortfolioSection({super.key, required this.effect});
                           textAlign: TextAlign.center,
                           style: AppStyle.txtH5
                               .copyWith(letterSpacing: getHorizontalSize(3.0))),
-                      CustomButton(
-                          height: getVerticalSize(38),
-                          width: getHorizontalSize(170),
-                          text: ""
-                              .toUpperCase(),
-                          margin: getMargin(top: 42, bottom: 42),
-                          variant: ButtonVariant.OutlineWhiteA7004b),
                       addVerticalSpacing(20),
                       const PortfolioSlider(),
                     ],
