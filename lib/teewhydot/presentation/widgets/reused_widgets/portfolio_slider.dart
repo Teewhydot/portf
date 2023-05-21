@@ -54,15 +54,6 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'netlify': '',
     },
     {
-      'title': 'Clone Chat',
-      'description': 'A chatting app for clones of yourself, built with Flutter',
-      'image': Assets.portfolioP2,
-      'image2': Assets.portfolioP1,
-      'image3': Assets.portfolioP1,
-      'github': '',
-      'netlify': '',
-    },
-    {
       'title': 'RockPaperScissors Game',
       'description': 'Short description of project 2',
       'image': Assets.portfolioP2,
