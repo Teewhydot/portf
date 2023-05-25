@@ -2,6 +2,31 @@
 class Assets {
   Assets._();
 
+  static const String appImagesCalc1 = 'assets/portfolio/app_images/calc1.jpg';
+  static const String appImagesCalc2 = 'assets/portfolio/app_images/calc2.jpg';
+  static const String appImagesCalc3 = 'assets/portfolio/app_images/calc3.jpg';
+  static const String appImagesCalc4 = 'assets/portfolio/app_images/calc4.jpg';
+  static const String appImagesFoodly1 = 'assets/portfolio/app_images/foodly1.png';
+  static const String appImagesFoodly2 = 'assets/portfolio/app_images/foodly2.png';
+  static const String appImagesFoodly3 = 'assets/portfolio/app_images/foodly3.png';
+  static const String appImagesFoodly4 = 'assets/portfolio/app_images/foodly4.png';
+  static const String appImagesMk1 = 'assets/portfolio/app_images/mk1.jpg';
+  static const String appImagesMk2 = 'assets/portfolio/app_images/mk2.jpg';
+  static const String appImagesMk3 = 'assets/portfolio/app_images/mk3.jpg';
+  static const String appImagesMk4 = 'assets/portfolio/app_images/mk4.jpg';
+  static const String appImagesMk5 = 'assets/portfolio/app_images/mk5.jpg';
+  static const String appImagesMusica1 = 'assets/portfolio/app_images/musica1.png';
+  static const String appImagesMusica2 = 'assets/portfolio/app_images/musica2.png';
+  static const String appImagesMusica3 = 'assets/portfolio/app_images/musica3.png';
+  static const String appImagesMusica4 = 'assets/portfolio/app_images/musica4.png';
+  static const String appImagesMusica5 = 'assets/portfolio/app_images/musica5.png';
+  static const String appImagesMusica6 = 'assets/portfolio/app_images/musica6.png';
+  static const String appImagesPcast1 = 'assets/portfolio/app_images/pcast1.png';
+  static const String appImagesPcast2 = 'assets/portfolio/app_images/pcast2.png';
+  static const String appImagesPcast3 = 'assets/portfolio/app_images/pcast3.png';
+  static const String appImagesPcast4 = 'assets/portfolio/app_images/pcast4.jpg';
+  static const String appImagesPcast5 = 'assets/portfolio/app_images/pcast5.png';
+  static const String appImagesPcast6 = 'assets/portfolio/app_images/pcast6.png';
   static const String fontsEpilogueBlack = 'assets/fonts/EpilogueBlack.ttf';
   static const String fontsEpilogueBold = 'assets/fonts/EpilogueBold.ttf';
   static const String fontsEpilogueExtraBold = 'assets/fonts/EpilogueExtraBold.ttf';
