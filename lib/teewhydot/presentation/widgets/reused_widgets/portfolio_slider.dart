@@ -45,7 +45,7 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image2': Assets.appImagesMusica2,
       'image3': Assets.appImagesMusica3,
       'github': '',
-      'netlify': '',
+      'netlify': 'https://miusica.netlify.app/',
       'displayColor' : Colors.blueAccent,
 
     },
@@ -67,7 +67,7 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image2': Assets.appImagesRps2,
       'image3': Assets.appImagesRps3,
       'github': '',
-      'netlify': '',
+      'netlify': 'https://rockpaperscissors-lizardspock.netlify.app/',
       'displayColor' : Colors.white,
 
     },
@@ -89,7 +89,7 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image2': Assets.appImagesAdvice2,
       'image3': Assets.appImagesAdvice3,
       'github': '',
-      'netlify': '',
+      'netlify': 'https://randomadvicesapp.netlify.app/',
       'displayColor' : Colors.yellowAccent,
 
     },
