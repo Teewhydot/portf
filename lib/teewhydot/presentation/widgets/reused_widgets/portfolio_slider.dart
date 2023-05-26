@@ -16,7 +16,7 @@ class PortfolioSlider extends StatefulWidget {
 }
 
 class _PortfolioSliderState extends State<PortfolioSlider> {
-  List<Map<String, String>> projects = [
+  List<Map<String, dynamic>> projects = [
     {
       'title': 'Calc',
       'description': 'A simple calculator app, built with Flutter',
@@ -25,6 +25,7 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image3': Assets.appImagesCalc3,
       'github': '',
       'netlify': '',
+      'displayColor' : const Color(0xffe6e6e6),
     },
     {
       'title': 'Foodly',
@@ -34,6 +35,8 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image3': Assets.appImagesFoodly3,
       'github': '',
       'netlify': '',
+      'displayColor' : Colors.green,
+
     },
     {
       'title': 'Musica',
@@ -43,6 +46,8 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image3': Assets.appImagesMusica3,
       'github': '',
       'netlify': '',
+      'displayColor' : Colors.blueAccent,
+
     },
     {
       'title': 'Medical Klinik',
@@ -52,15 +57,19 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image3': Assets.appImagesMk3,
       'github': '',
       'netlify': '',
+      'displayColor' : Colors.redAccent,
+
     },
     {
       'title': 'RockPaperScissors Game',
       'description': 'Short description of project 2',
-      'image': Assets.portfolioP2,
-      'image2': Assets.portfolioP1,
-      'image3': Assets.portfolioP1,
+      'image': Assets.appImagesRps1,
+      'image2': Assets.appImagesRps2,
+      'image3': Assets.appImagesRps3,
       'github': '',
       'netlify': '',
+      'displayColor' : Colors.white,
+
     },
     {
       'title': 'Podcast App',
@@ -70,7 +79,21 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image3': Assets.appImagesPcast3,
       'github': '',
       'netlify': '',
+      'displayColor' : Colors.white,
+
     },
+    {
+      'title': 'Random Advice app',
+      'description': 'A random advice app, built with Flutter',
+      'image': Assets.appImagesAdvice1,
+      'image2': Assets.appImagesAdvice2,
+      'image3': Assets.appImagesAdvice3,
+      'github': '',
+      'netlify': '',
+      'displayColor' : Colors.yellowAccent,
+
+    },
+
   ];
 
   @override
@@ -119,16 +142,16 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
                                 ),
                                 Text(project['description']!),
                                 addVerticalSpacing(20),
-                                Image.asset(project['image']!, height: 300),
+                                Image.asset(project['image']!, height: 400),
                                 addVerticalSpacing(20),
                                 Image.asset(
                                   project['image2']!,
-                                  height: 300,
+                                  height: 400,
                                 ),
                                 addVerticalSpacing(20),
                                 Image.asset(
                                   project['image3']!,
-                                  height: 300,
+                                  height: 400,
                                 ),
                                 addVerticalSpacing(20),
                                 GestureDetector(
@@ -160,11 +183,8 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
                   width: MediaQuery.of(context).size.width,
                   margin: const EdgeInsets.symmetric(horizontal: 5.0),
                   decoration: BoxDecoration(
-                      color: Colors.white,
-                      image: DecorationImage(
-                        image: AssetImage(project['image']!),
-                        fit: BoxFit.cover,
-                      ),
+                      color: project['displayColor']!,
+
                       borderRadius: BorderRadius.circular(20)),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,

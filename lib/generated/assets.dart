@@ -2,6 +2,9 @@
 class Assets {
   Assets._();
 
+  static const String appImagesAdvice1 = 'assets/portfolio/app_images/advice1.jpg';
+  static const String appImagesAdvice2 = 'assets/portfolio/app_images/advice2.jpg';
+  static const String appImagesAdvice3 = 'assets/portfolio/app_images/advice3.jpg';
   static const String appImagesCalc1 = 'assets/portfolio/app_images/calc1.jpg';
   static const String appImagesCalc2 = 'assets/portfolio/app_images/calc2.jpg';
   static const String appImagesCalc3 = 'assets/portfolio/app_images/calc3.jpg';
@@ -27,6 +30,11 @@ class Assets {
   static const String appImagesPcast4 = 'assets/portfolio/app_images/pcast4.jpg';
   static const String appImagesPcast5 = 'assets/portfolio/app_images/pcast5.png';
   static const String appImagesPcast6 = 'assets/portfolio/app_images/pcast6.png';
+  static const String appImagesRps1 = 'assets/portfolio/app_images/rps1.jpg';
+  static const String appImagesRps2 = 'assets/portfolio/app_images/rps2.jpg';
+  static const String appImagesRps3 = 'assets/portfolio/app_images/rps3.jpg';
+  static const String appImagesRps4 = 'assets/portfolio/app_images/rps4.jpg';
+  static const String appImagesRps5 = 'assets/portfolio/app_images/rps5.jpg';
   static const String fontsEpilogueBlack = 'assets/fonts/EpilogueBlack.ttf';
   static const String fontsEpilogueBold = 'assets/fonts/EpilogueBold.ttf';
   static const String fontsEpilogueExtraBold = 'assets/fonts/EpilogueExtraBold.ttf';
