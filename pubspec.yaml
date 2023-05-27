@@ -75,5 +75,6 @@ flutter:
     - assets/
     - assets/icons/
     - assets/portfolio/app_images/
+    - assets/portfolio/
     - assets/lottie/
     - assets/fonts/

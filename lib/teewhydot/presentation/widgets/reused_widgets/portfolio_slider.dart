@@ -23,6 +23,7 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image': Assets.appImagesCalc1,
       'image2': Assets.appImagesCalc2,
       'image3': Assets.appImagesCalc3,
+      'isNetlify' : true,
       'github': '',
       'netlify': '',
       'displayColor' : const Color(0xffe6e6e6),
@@ -33,6 +34,8 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image': Assets.appImagesFoodly1,
       'image2': Assets.appImagesFoodly2,
       'image3': Assets.appImagesFoodly3,
+      'isNetlify' : false,
+
       'github': '',
       'netlify': '',
       'displayColor' : Colors.green,
@@ -44,6 +47,8 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image': Assets.appImagesMusica1,
       'image2': Assets.appImagesMusica2,
       'image3': Assets.appImagesMusica3,
+      'isNetlify' : true,
+
       'github': '',
       'netlify': 'https://miusica.netlify.app/',
       'displayColor' : Colors.blueAccent,
@@ -58,6 +63,8 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'github': '',
       'netlify': '',
       'displayColor' : Colors.redAccent,
+      'isNetlify' : false,
+
 
     },
     {
@@ -67,6 +74,8 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image2': Assets.appImagesRps2,
       'image3': Assets.appImagesRps3,
       'github': '',
+      'isNetlify' : true,
+
       'netlify': 'https://rockpaperscissors-lizardspock.netlify.app/',
       'displayColor' : Colors.white,
 
@@ -80,6 +89,8 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'github': '',
       'netlify': '',
       'displayColor' : Colors.white,
+      'isNetlify' : false,
+
 
     },
     {
@@ -91,6 +102,8 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'github': '',
       'netlify': 'https://randomadvicesapp.netlify.app/',
       'displayColor' : Colors.yellowAccent,
+      'isNetlify' : true,
+
 
     },
 
@@ -154,14 +167,17 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
                                   height: 400,
                                 ),
                                 addVerticalSpacing(20),
-                                GestureDetector(
-                                  onTap: () {},
-                                  child: CustomButton(
-                                      height: getVerticalSize(48),
-                                      width: getHorizontalSize(150),
-                                      text: "View as website".toUpperCase(),
-                                      onTap: () {},
-                                      margin: getMargin(top: 40)),
+                                Visibility(
+                                  visible: project['isNetlify'],
+                                  child: GestureDetector(
+                                    onTap: () {},
+                                    child: CustomButton(
+                                        height: getVerticalSize(48),
+                                        width: getHorizontalSize(150),
+                                        text: "View as website".toUpperCase(),
+                                        onTap: () {},
+                                        margin: getMargin(top: 40)),
+                                  ),
                                 ),
                                 addVerticalSpacing(10),
                                 GestureDetector(
