@@ -25,7 +25,7 @@ class _ContactFormWidgetState extends State<ContactFormWidget> {
         children: [
           TextFormField(
             controller: _nameController,
-            style: TextStyle(color: Colors.white),
+            style: const TextStyle(color: Colors.white),
 
             decoration: const InputDecoration(labelText: 'Name', labelStyle: TextStyle(color: Colors.white),),
             validator: (value) {
@@ -38,7 +38,7 @@ class _ContactFormWidgetState extends State<ContactFormWidget> {
           TextFormField(
             controller: _emailController,
             decoration: const InputDecoration(labelText: 'Email', labelStyle: TextStyle(color: Colors.white),),
-            style: TextStyle(color: Colors.white),
+            style: const TextStyle(color: Colors.white),
             validator: (value) {
               if (value!.isEmpty) {
                 return 'Please enter your email';
@@ -48,7 +48,7 @@ class _ContactFormWidgetState extends State<ContactFormWidget> {
           ),
           TextFormField(
             controller: _messageController,
-            style: TextStyle(color: Colors.white),
+            style: const TextStyle(color: Colors.white),
 
             decoration: const InputDecoration(labelText: 'Message', labelStyle: TextStyle(color: Colors.white),),
             minLines: 4,

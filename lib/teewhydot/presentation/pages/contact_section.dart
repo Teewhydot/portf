@@ -52,6 +52,8 @@ class _ContactSectionState extends State<ContactSection> {
                       style:
                       AppStyle.txtH5.copyWith(letterSpacing: getHorizontalSize(3.0)),
                     ),
+                    const SizedBox(height: 50),
+
                     const SocialMediaContainer(),
 
                     const SizedBox(height: 250),
