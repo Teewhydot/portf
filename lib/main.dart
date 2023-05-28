@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'teewhydot/domain/theme/color_constant.dart';
 import 'teewhydot/domain/utils/preload_images.dart';
 import 'teewhydot/presentation/pages/home_translate.dart';
