@@ -65,9 +65,6 @@ class Assets {
   static const String iconsImgTrashWhiteA700 = 'assets/icons/img_trash_white_a700.svg';
   static const String iconsImgTriangle = 'assets/icons/img_triangle.svg';
   static const String iconsImgTwitter = 'assets/icons/img_twitter.svg';
-  static const String lottie135542LinesWaves = 'assets/lottie/135542-lines-waves.json';
-  static const String lottie138767LaptopAnimatiion = 'assets/lottie/138767-laptop-animatiion.json';
-  static const String lottieHelloLottie = 'assets/lottie/Hello-Lottie.json';
   static const String portfolioLogo = 'assets/portfolio/logo.jpg';
   static const String portfolioMe = 'assets/portfolio/me.jpg';
   static const String portfolioP1 = 'assets/portfolio/p1.jpg';
