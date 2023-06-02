@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:portf/generated/assets.dart';
 import 'package:portf/teewhydot/domain/theme/app_style.dart';
 import 'package:portf/teewhydot/domain/theme/color_constant.dart';
+import 'package:portf/teewhydot/domain/utils/functions.dart';
 import 'package:portf/teewhydot/domain/utils/size_utils.dart';
 import 'package:portf/teewhydot/domain/utils/space_utils.dart';
 import 'package:portf/teewhydot/presentation/widgets/reused_widgets/custom_button.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 
 class PortfolioSlider extends StatefulWidget {
@@ -169,26 +171,22 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
                                 addVerticalSpacing(20),
                                 Visibility(
                                   visible: project['isNetlify'],
-                                  child: GestureDetector(
-                                    onTap: () {},
-                                    child: CustomButton(
-                                        height: getVerticalSize(48),
-                                        width: getHorizontalSize(150),
-                                        text: "View as website".toUpperCase(),
-                                        onTap: () {},
-                                        margin: getMargin(top: 40)),
-                                  ),
-                                ),
-                                addVerticalSpacing(10),
-                                GestureDetector(
-                                  onTap: () {},
                                   child: CustomButton(
                                       height: getVerticalSize(48),
                                       width: getHorizontalSize(150),
-                                      text: "View on Github".toUpperCase(),
-                                      onTap: () {},
-                                      margin: getMargin(top: 20)),
+                                      text: "View as website".toUpperCase(),
+                                      onTap: () {
+                                        launchURLString(project['netlify']!,context);
+                                      },
+                                      margin: getMargin(top: 40)),
                                 ),
+                                addVerticalSpacing(10),
+                                CustomButton(
+                                    height: getVerticalSize(48),
+                                    width: getHorizontalSize(150),
+                                    text: "View on Github".toUpperCase(),
+                                    onTap: () {},
+                                    margin: getMargin(top: 20)),
                               ],
                             ),
                           )),
