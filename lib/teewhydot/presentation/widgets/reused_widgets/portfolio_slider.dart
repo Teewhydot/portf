@@ -26,7 +26,7 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image2': Assets.appImagesCalc2,
       'image3': Assets.appImagesCalc3,
       'isNetlify' : true,
-      'github': '',
+      'github': 'https://github.com/Teewhydot/calc',
       'netlify': '',
       'displayColor' : const Color(0xffe6e6e6),
     },
@@ -51,7 +51,7 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image3': Assets.appImagesMusica3,
       'isNetlify' : true,
 
-      'github': '',
+      'github': 'https://github.com/Teewhydot/musica',
       'netlify': 'https://miusica.netlify.app/',
       'displayColor' : Colors.blueAccent,
 
@@ -62,7 +62,7 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image': Assets.appImagesMk1,
       'image2': Assets.appImagesMk2,
       'image3': Assets.appImagesMk3,
-      'github': '',
+      'github': 'https://github.com/Teewhydot/medical_clinik',
       'netlify': '',
       'displayColor' : Colors.redAccent,
       'isNetlify' : false,
@@ -75,9 +75,8 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image': Assets.appImagesRps1,
       'image2': Assets.appImagesRps2,
       'image3': Assets.appImagesRps3,
-      'github': '',
+      'github': 'https://github.com/Teewhydot/rock_paper_scissors',
       'isNetlify' : true,
-
       'netlify': 'https://rockpaperscissors-lizardspock.netlify.app/',
       'displayColor' : Colors.white,
 
@@ -88,7 +87,7 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'image': Assets.appImagesPcast1,
       'image2': Assets.appImagesPcast2,
       'image3': Assets.appImagesPcast3,
-      'github': '',
+      'github': 'https://github.com/Teewhydot/pcast_app',
       'netlify': '',
       'displayColor' : Colors.white,
       'isNetlify' : false,
@@ -185,8 +184,13 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
                                     height: getVerticalSize(48),
                                     width: getHorizontalSize(150),
                                     text: "View on Github".toUpperCase(),
-                                    onTap: () {},
+                                    onTap: () {
+                                      launchURLString(project['github']!,context);
+                                    },
                                     margin: getMargin(top: 20)),
+                                addVerticalSpacing(10),
+
+
                               ],
                             ),
                           )),

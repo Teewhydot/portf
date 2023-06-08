@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:portf/teewhydot/domain/theme/app_style.dart';
 import 'package:portf/teewhydot/domain/theme/color_constant.dart';
+import 'package:portf/teewhydot/domain/utils/functions.dart';
 import 'package:portf/teewhydot/domain/utils/size_utils.dart';
 import 'package:portf/teewhydot/domain/utils/space_utils.dart';
 import 'package:portf/teewhydot/presentation/widgets/reused_widgets/custom_button.dart';
@@ -90,7 +91,9 @@ class AboutSection extends StatelessWidget {
                     Icons.download,
                     color: ColorConstant.whiteA700,
                   ),
-                  onTap: () {},
+                  onTap: () {
+                    launchURLString('https://i.postimg.cc/zBb3mYtH/Issa-Abubakar-Resume.png', context);
+                  },
                 ),
                 addVerticalSpacing(98),
                 EducationalHistoryWidget(

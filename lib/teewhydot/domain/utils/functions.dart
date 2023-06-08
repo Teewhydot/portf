@@ -22,3 +22,25 @@ void launchURLString(String url, BuildContext context) async {
         backgroundColor: Colors.yellowAccent);
   }
 }
+//
+// class CVDownloadButton extends StatelessWidget {
+//   final String cvUrl;
+//
+//   const CVDownloadButton({super.key, required this.cvUrl});
+//
+//   void _launchURL() async {
+//     if (await canLaunchUrlString(cvUrl)) {
+//       await launchUrlString(cvUrl);
+//     } else {
+//       throw 'Could not launch $cvUrl';
+//     }
+//   }
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return ElevatedButton(
+//       onPressed: _launchURL,
+//       child: Text('Download CV'),
+//     );
+//   }
+// }
