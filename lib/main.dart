@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_downloader/flutter_downloader.dart';
 import 'teewhydot/domain/theme/color_constant.dart';
 import 'teewhydot/domain/utils/preload_images.dart';
 import 'teewhydot/presentation/pages/home_translate.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await FlutterDownloader.initialize(debug: true); // Initialize the plugin
   runApp(const Portfolio());
 }
 

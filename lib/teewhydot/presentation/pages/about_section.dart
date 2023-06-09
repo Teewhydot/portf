@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:portf/teewhydot/domain/theme/app_style.dart';
 import 'package:portf/teewhydot/domain/theme/color_constant.dart';
 import 'package:portf/teewhydot/domain/utils/functions.dart';
@@ -87,12 +88,14 @@ class AboutSection extends StatelessWidget {
                   width: getHorizontalSize(209),
                   height: getSize(55),
                   text: 'Download CV',
-                  prefixWidget: Icon(
-                    Icons.download,
-                    color: ColorConstant.whiteA700,
-                  ),
-                  onTap: () {
-                    launchURLString('https://i.postimg.cc/zBb3mYtH/Issa-Abubakar-Resume.png', context);
+                  onTap: ( )async {
+                    // launchURLString('https://i.postimg.cc/zBb3mYtH/Issa-Abubakar-Resume.png', context);
+                    final taskId = await FlutterDownloader.enqueue(
+                      url: 'https://i.postimg.cc/zBb3mYtH/Issa-Abubakar-Resume.png',
+                      savedDir: 'the path of directory where you want to save downloaded files',
+                      showNotification: true, // show download progress in status bar (for Android)
+                      openFileFromNotification: true, // click on notification to open downloaded file (for Android)
+                    );
                   },
                 ),
                 addVerticalSpacing(98),
