@@ -217,7 +217,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                                 ),
                               ),
                               FadeBottomTopAnimation(
-                                key: headerKey,
+                                customKey: headerKey,
                                 child: Padding(
                                   padding: getPadding(
                                     left: 23,
@@ -358,7 +358,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                                 ),
                               ),
                               FadeBottomTopAnimation(
-                                key: servicesKey,
+                                customKey: servicesKey,
                                 child: Padding(
                                   padding: getPadding(
                                     left: 23,
@@ -432,7 +432,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                                 ),
                               ),
                               FadeBottomTopAnimation(
-                                  key: portfolioKey,
+                                  customKey: portfolioKey,
                                   child: PortfolioSection(
                                     effect: _controller.isCompleted
                                         ? const BlurEffect(
@@ -446,7 +446,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                                   )),
                               addVerticalSpacing(250),
                               FadeBottomTopAnimation(
-                                key: aboutKey,
+                                customKey: aboutKey,
                                 child: AboutSection(
                                     name: 'Abubakar Issa',
                                     photoUrl: Assets.portfolioMe,
@@ -471,7 +471,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                               ),
                               addVerticalSpacing(250),
                               FadeBottomTopAnimation(
-                                key: contactKey,
+                                customKey: contactKey,
                                 child: ContactSection(
                                   effect: _controller.isCompleted
                                       ? const BlurEffect(

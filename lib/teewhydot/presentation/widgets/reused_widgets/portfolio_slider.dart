@@ -7,7 +7,6 @@ import 'package:portf/teewhydot/domain/utils/functions.dart';
 import 'package:portf/teewhydot/domain/utils/size_utils.dart';
 import 'package:portf/teewhydot/domain/utils/space_utils.dart';
 import 'package:portf/teewhydot/presentation/widgets/reused_widgets/custom_button.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 
 class PortfolioSlider extends StatefulWidget {

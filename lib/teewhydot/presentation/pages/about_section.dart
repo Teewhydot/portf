@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:portf/teewhydot/domain/theme/app_style.dart';
 import 'package:portf/teewhydot/domain/theme/color_constant.dart';
 import 'package:portf/teewhydot/domain/utils/functions.dart';

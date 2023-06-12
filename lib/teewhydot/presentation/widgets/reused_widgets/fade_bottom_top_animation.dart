@@ -4,10 +4,9 @@ import 'package:flutter/material.dart';
 
 class FadeBottomTopAnimation extends StatefulWidget {
   final Widget child;
-  @override
-  final Key key;
+  final Key customKey;
 
-  const FadeBottomTopAnimation({required this.child, required this.key});
+  const FadeBottomTopAnimation({super.key, required this.child, required this.customKey});
 
   @override
   State<FadeBottomTopAnimation> createState() => _FadeBottomTopAnimationState();
