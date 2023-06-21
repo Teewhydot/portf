@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_downloader/flutter_downloader.dart';
 import 'teewhydot/domain/theme/color_constant.dart';
 import 'teewhydot/domain/utils/preload_images.dart';
 import 'teewhydot/presentation/pages/home_translate.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await FlutterDownloader.initialize(debug: true); // Initialize the plugin
   runApp(const Portfolio());
 }
 
@@ -42,8 +40,9 @@ class _PortfolioState extends State<Portfolio> {
         if(boxConstraints.maxWidth < 600){
           return const CustomHomeTranslate();
         }else {
-          return const Scaffold(
-            body: Center(
+          return Scaffold(
+            backgroundColor: ColorConstant.scaffoldColorOne,
+            body: const Center(
               child: Text("Desktop Version in development", style: TextStyle(
                 fontSize: 30,
                 decoration: TextDecoration.underline

@@ -318,7 +318,7 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                                                           'FLUTTER Developer'
                                                               .toUpperCase()),
                                                       RotateAnimatedText(
-                                                          'BLOCKCHAIN Developer'
+                                                          'Cyber Security Specialist'
                                                               .toUpperCase()),
                                                     ],
                                                     onTap: () {},
@@ -419,13 +419,6 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                                               color: Colors.white,
                                               size: 15.0,
                                             )),
-                                        const ServicesWidget(
-                                            serviceName: 'Smart contracts',
-                                            serviceIcon: FaIcon(
-                                              FontAwesomeIcons.fileContract,
-                                              color: Colors.white,
-                                              size: 15.0,
-                                            )),
                                       ],
                                     ),
                                   ),
@@ -464,9 +457,6 @@ class _CustomHomeTranslateState extends State<CustomHomeTranslate>
                                       'Dart',
                                       'API',
                                       'Firebase',
-                                      'Blockchain',
-                                      'Solidity',
-                                      'Smart Contracts',
                                     ]),
                               ),
                               addVerticalSpacing(250),
