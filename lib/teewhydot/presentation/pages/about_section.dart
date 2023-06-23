@@ -89,12 +89,6 @@ class AboutSection extends StatelessWidget {
                   text: 'Download CV',
                   onTap: ( )async {
                     launchURLString('https://i.postimg.cc/zBb3mYtH/Issa-Abubakar-Resume.png', context);
-                    // final taskId = await FlutterDownloader.enqueue(
-                    //   url: 'https://i.postimg.cc/zBb3mYtH/Issa-Abubakar-Resume.png',
-                    //   savedDir: 'file:///storage/emulated/0/Download',
-                    //   showNotification: true, // show download progress in status bar (for Android)
-                    //   openFileFromNotification: true, // click on notification to open downloaded file (for Android)
-                    // );
                   },
                 ),
                 addVerticalSpacing(98),
@@ -196,9 +190,14 @@ List<Education> educationList = [
     duration: '2016 - 2023',
   ),
   const Education(
+    institution: 'St Anthony secondary school',
+    degree: 'Senior Secondary School Certificate',
+    duration: '2011 - 2014',
+  ),
+  const Education(
     institution: 'Dalex Royal College, Ilorin',
     degree: 'Senior Secondary School Certificate',
-    duration: '2016 - 2018',
+    duration: '2008 - 2011',
   ),
 ];
 
@@ -211,11 +210,11 @@ List<Education> codingHistoryList = [
   const Education(
     institution: 'Udemy',
     degree: 'Flutter Development',
-    duration: '2016 - 2018',
+    duration: '2021 - 2022',
   ),
   const Education(
     institution: 'Udemy',
-    degree: 'Blockchain Development',
-    duration: '2016 - 2018',
+    degree: 'Cyber Security',
+    duration: '2022 - 2023',
   ),
 ];
