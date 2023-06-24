@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:portf/teewhydot/presentation/pages/home_desktop.dart';
 import 'teewhydot/domain/theme/color_constant.dart';
 import 'teewhydot/domain/utils/preload_images.dart';
-import 'teewhydot/presentation/pages/home_translate.dart';
+import 'teewhydot/presentation/pages/home_mobile.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -38,17 +39,9 @@ class _PortfolioState extends State<Portfolio> {
       debugShowCheckedModeBanner: false,
       home: LayoutBuilder(builder: (BuildContext context,BoxConstraints boxConstraints){
         if(boxConstraints.maxWidth < 600){
-          return const CustomHomeTranslate();
+          return const HomeMobile();
         }else {
-          return Scaffold(
-            backgroundColor: ColorConstant.scaffoldColorOne,
-            body: const Center(
-              child: Text("Desktop Version in development", style: TextStyle(
-                fontSize: 30,
-                decoration: TextDecoration.underline
-              ),),
-            ),
-          );
+          return HomeDesktop();
         }
       } ),
     );

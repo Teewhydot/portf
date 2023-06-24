@@ -17,14 +17,14 @@ import 'package:portf/teewhydot/presentation/widgets/reused_widgets/custom_butto
 import 'package:portf/teewhydot/presentation/widgets/reused_widgets/fade_bottom_top_animation.dart';
 import 'package:portf/teewhydot/presentation/widgets/reused_widgets/services_widget.dart';
 
-class CustomHomeTranslate extends StatefulWidget {
-  const CustomHomeTranslate({super.key});
+class HomeMobile extends StatefulWidget {
+  const HomeMobile({super.key});
 
   @override
-  State<CustomHomeTranslate> createState() => _CustomHomeTranslateState();
+  State<HomeMobile> createState() => _HomeMobileState();
 }
 
-class _CustomHomeTranslateState extends State<CustomHomeTranslate>
+class _HomeMobileState extends State<HomeMobile>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   final scrollController = ScrollController();
