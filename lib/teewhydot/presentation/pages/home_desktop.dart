@@ -5,7 +5,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
 import 'package:portf/generated/assets.dart';
 import 'dart:math' as math;
-
 import 'package:portf/teewhydot/domain/theme/app_style.dart';
 import 'package:portf/teewhydot/domain/theme/color_constant.dart';
 import 'package:portf/teewhydot/domain/utils/size_utils.dart';
@@ -28,28 +27,11 @@ class HomeDesktop extends StatefulWidget {
 class _HomeDesktopState extends State<HomeDesktop> {
   // late AnimationController _controller;
   final scrollController = ScrollController();
-  bool showFab = false;
   final headerKey = const Key('header');
   final portfolioKey = const Key('portfolio');
   final servicesKey = const Key('Services');
   final aboutKey = const Key('about key');
   final contactKey = const Key('contact key');
-  @override
-  void initState() {
-    super.initState();
-    scrollController.addListener(() {
-      if (scrollController.offset > 500) {
-        setState(() {
-          showFab = true;
-        });
-      } else {
-        setState(() {
-          showFab = false;
-        });
-      }
-    });
-  }
-
 
   @override
   Widget build(BuildContext context) {
@@ -76,7 +58,6 @@ class _HomeDesktopState extends State<HomeDesktop> {
                             scrollController.animateTo(0.0,
                                 duration: const Duration(milliseconds: 500),
                                 curve: Curves.easeInOutCubic);
-
                           },
                           child: const ListTile(
                             leading: Icon(Icons.home_filled),
@@ -85,7 +66,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                         ),
                         GestureDetector(
                           onTap: () {
-                            scrollController.animateTo(getVerticalSize(850),
+                            scrollController.animateTo(getVerticalSize(750),
                                 duration: const Duration(milliseconds: 500),
                                 curve: Curves.easeInOutCubic);
                           },
@@ -96,7 +77,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                         ),
                         GestureDetector(
                           onTap: () {
-                            scrollController.animateTo(getVerticalSize(1550),
+                            scrollController.animateTo(getVerticalSize(1350),
                                 duration: const Duration(milliseconds: 500),
                                 curve: Curves.easeInOutCubic);
                           },
@@ -107,7 +88,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                         ),
                         GestureDetector(
                           onTap: () {
-                            scrollController.animateTo(getVerticalSize(2200),
+                            scrollController.animateTo(getVerticalSize(2300),
                                 duration: const Duration(milliseconds: 500),
                                 curve: Curves.easeInOutCubic);
                           },
@@ -118,7 +99,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                         ),
                         GestureDetector(
                           onTap: () {
-                            scrollController.animateTo(getVerticalSize(3650),
+                            scrollController.animateTo(getVerticalSize(4150),
                                 duration: const Duration(milliseconds: 500),
                                 curve: Curves.easeInOutCubic);
                           },

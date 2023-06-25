@@ -117,7 +117,7 @@ class _HomeMobileState extends State<HomeMobile>
                             ),
                             GestureDetector(
                               onTap: () {
-                                scrollController.animateTo(getVerticalSize(850),
+                                scrollController.animateTo(getVerticalSize(750),
                                     duration: const Duration(milliseconds: 500),
                                     curve: Curves.easeInOutCubic);
                                 _controller.reverse();
@@ -129,7 +129,7 @@ class _HomeMobileState extends State<HomeMobile>
                             ),
                             GestureDetector(
                               onTap: () {
-                                scrollController.animateTo(getVerticalSize(1550),
+                                scrollController.animateTo(getVerticalSize(1350),
                                     duration: const Duration(milliseconds: 500),
                                     curve: Curves.easeInOutCubic);
                                 _controller.reverse();
@@ -141,7 +141,7 @@ class _HomeMobileState extends State<HomeMobile>
                             ),
                             GestureDetector(
                               onTap: () {
-                                scrollController.animateTo(getVerticalSize(2200),
+                                scrollController.animateTo(getVerticalSize(2300),
                                     duration: const Duration(milliseconds: 500),
                                     curve: Curves.easeInOutCubic);
                                 _controller.reverse();
@@ -153,7 +153,7 @@ class _HomeMobileState extends State<HomeMobile>
                             ),
                             GestureDetector(
                               onTap: () {
-                                scrollController.animateTo(getVerticalSize(3650),
+                                scrollController.animateTo(getVerticalSize(4150),
                                     duration: const Duration(milliseconds: 500),
                                     curve: Curves.easeInOutCubic);
                                 _controller.reverse();
