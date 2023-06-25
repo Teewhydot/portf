@@ -141,7 +141,7 @@ class _HomeMobileState extends State<HomeMobile>
                             ),
                             GestureDetector(
                               onTap: () {
-                                scrollController.animateTo(getVerticalSize(2300),
+                                scrollController.animateTo(getVerticalSize(2000),
                                     duration: const Duration(milliseconds: 500),
                                     curve: Curves.easeInOutCubic);
                                 _controller.reverse();
