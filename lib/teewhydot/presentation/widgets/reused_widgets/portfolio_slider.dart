@@ -70,7 +70,7 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
     },
     {
       'title': 'RockPaperScissors Game',
-      'description': 'Short description of project 2',
+      'description': 'Roc Paper Scissors game built with flutter',
       'image': Assets.appImagesRps1,
       'image2': Assets.appImagesRps2,
       'image3': Assets.appImagesRps3,
