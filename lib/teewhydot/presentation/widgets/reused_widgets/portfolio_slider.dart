@@ -64,7 +64,7 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'github': 'https://github.com/Teewhydot/medical_clinik',
       'netlify': '',
       'displayColor' : Colors.redAccent,
-      'isNetlify' : false,
+      'isNetlify' : true,
 
 
     },
