@@ -22,9 +22,9 @@ PortfolioSection({super.key, required this.effect});
                 margin: getMargin(top: 34),
                 padding: getPadding(left: 22, top: 60, right: 21, bottom: 60),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment:
-                  CrossAxisAlignment.start,
+                  CrossAxisAlignment.center,
                   children: AnimateList(
                     autoPlay: true,
                     interval:

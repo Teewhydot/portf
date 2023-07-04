@@ -38,10 +38,10 @@ class _PortfolioState extends State<Portfolio> {
       color: ColorConstant.scaffoldColorOne,
       debugShowCheckedModeBanner: false,
       home: LayoutBuilder(builder: (BuildContext context,BoxConstraints boxConstraints){
-        if(boxConstraints.maxWidth < 600){
+        if(boxConstraints.maxWidth < 800){
           return const HomeMobile();
         }else {
-          return HomeDesktop();
+          return const HomeDesktop();
         }
       } ),
     );

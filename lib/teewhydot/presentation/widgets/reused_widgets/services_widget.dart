@@ -17,7 +17,7 @@ class ServicesWidget extends StatelessWidget {
     return Align(
         alignment: Alignment.center,
         child: Container(
-            width: getHorizontalSize(309),
+            width: getHorizontalSize(150),
             margin: getMargin(top: 39),
             child: Column(children: [
               Align(
@@ -30,7 +30,7 @@ class ServicesWidget extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Padding(
-                                padding: getPadding(top: 1, right: 5,left: 50),
+                                padding: getPadding(top: 1, right: 5,left: 10),
                                 child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -38,14 +38,14 @@ class ServicesWidget extends StatelessWidget {
                                     Icon(serviceIcon.icon,
                                             color: ColorConstant
                                                 .deepOrange400 ,
-                                            size: getSize(30)),
+                                            size: getSize(25)),
                                       addHorizontalSpacing(10),
                                       Padding(
                                           padding:
                                               getPadding(top: 28, bottom: 26),
                                           child: Text(serviceName,
                                               overflow: TextOverflow.ellipsis,
-                                              textAlign: TextAlign.left,
+                                              textAlign: TextAlign.center,
                                               style: AppStyle.txtH4Gray900))
                                     ])),
                           ]))),

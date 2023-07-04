@@ -41,8 +41,9 @@ class _HomeDesktopState extends State<HomeDesktop> {
         children: [
           Expanded(
             flex: 1,
-            child: SizedBox(
-              width: getHorizontalSize(100),
+            child: Container(
+              color: Colors.red,
+              width: getHorizontalSize(350),
               height: double.infinity,
               child: Material(
                 color: ColorConstant.scaffoldColorOne,
@@ -51,7 +52,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                     data: ThemeData(brightness: Brightness.dark),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisSize: MainAxisSize.max,
+                      mainAxisSize: MainAxisSize.min,
                       children: [
                         GestureDetector(
                           onTap: () {
@@ -214,18 +215,20 @@ class _HomeDesktopState extends State<HomeDesktop> {
                               ],
                             ),
                             addVerticalSpacing(20),
-                            Padding(
-                                padding: getPadding(right: 45),
-                                child: Text(
-                                    "As a seasoned Developer, I possess a comprehensive skill set and invaluable experience that are perfectly suited to tackle your projects with finesse. My journey as a developer has been guided by exceptional coding communities, enabling me to master the craft and excel in executing highly sought-after projects.",
-                                    maxLines: null,
-                                    textAlign: TextAlign.left,
-                                    style: AppStyle.txtText)),
+                            SizedBox(width: getHorizontalSize(250),
+                              child: Padding(
+                                  padding: getPadding(right: 45),
+                                  child: Text(
+                                      "As a seasoned Developer, I possess a comprehensive skill set and invaluable experience that are perfectly suited to tackle your projects with finesse. My journey as a developer has been guided by exceptional coding communities, enabling me to master the craft and excel in executing highly sought-after projects.",
+                                      maxLines: null,
+                                      textAlign: TextAlign.left,
+                                      style: AppStyle.txtText)),
+                            ),
                             GestureDetector(
                               onTap: () {},
                               child: CustomButton(
                                   height: getVerticalSize(48),
-                                  width: getHorizontalSize(154),
+                                  width: getHorizontalSize(84),
                                   text: "See My Work"
                                       .toUpperCase(),
                                   onTap: () {
@@ -268,6 +271,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                                 overflow: TextOverflow.ellipsis,
                                 textAlign: TextAlign.left,
                                 style: AppStyle.txtH5.copyWith(
+
                                     letterSpacing:
                                     getHorizontalSize(
                                         3.0)))),

@@ -62,7 +62,7 @@ class _ContactFormWidgetState extends State<ContactFormWidget> {
           ),
           const SizedBox(height: 24),
           CustomButton(
-            width: 120,
+            width: 150,
           height: 50,
           text: 'Send' ,
             onTap: () {

@@ -65,8 +65,6 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'netlify': '',
       'displayColor' : Colors.redAccent,
       'isNetlify' : true,
-
-
     },
     {
       'title': 'RockPaperScissors Game',
@@ -78,7 +76,6 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
       'isNetlify' : true,
       'netlify': 'https://rockpaperscissors-lizardspock.netlify.app/',
       'displayColor' : Colors.white,
-
     },
     {
       'title': 'Podcast App',
@@ -106,7 +103,6 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
 
 
     },
-
   ];
 
   @override
@@ -197,7 +193,7 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
                   );
                 },
                 child: Container(
-                  width: MediaQuery.of(context).size.width,
+                  width: getHorizontalSize(200),
                   margin: const EdgeInsets.symmetric(horizontal: 5.0),
                   decoration: BoxDecoration(
                       color: project['displayColor']!,
