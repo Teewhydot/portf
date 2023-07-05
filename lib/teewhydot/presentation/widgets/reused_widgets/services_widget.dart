@@ -17,7 +17,7 @@ class ServicesWidget extends StatelessWidget {
     return Align(
         alignment: Alignment.center,
         child: Container(
-            width: getHorizontalSize(150),
+            width: getHorizontalSize(250),
             margin: getMargin(top: 39),
             child: Column(children: [
               Align(
