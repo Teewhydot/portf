@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_email_sender/flutter_email_sender.dart';
-import 'package:portf/teewhydot/domain/theme/color_constant.dart';
 import 'package:portf/teewhydot/presentation/widgets/reused_widgets/custom_button.dart';
 
 class ContactFormWidget extends StatefulWidget {
@@ -65,7 +64,7 @@ class _ContactFormWidgetState extends State<ContactFormWidget> {
           CustomButton(
             width: 150,
           height: 50,
-          text: 'Send' ,
+          text: 'Send',
             onTap: () {
               if (_formKey.currentState!.validate()) {
                 _sendEmail();
@@ -80,7 +79,7 @@ class _ContactFormWidgetState extends State<ContactFormWidget> {
   void _sendEmail() async {
     final Email email = Email(
       body: _messageController.text,
-      subject: 'Contact Form Submission',
+      subject: 'Contact Form',
       recipients: ['tchipsical@gmail.com'],
       isHTML: false,
     );

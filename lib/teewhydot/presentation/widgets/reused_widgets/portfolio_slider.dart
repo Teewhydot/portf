@@ -168,7 +168,7 @@ class _PortfolioSliderState extends State<PortfolioSlider> {
                                   child: CustomButton(
                                       height: getVerticalSize(48),
                                       width: getHorizontalSize(150),
-                                      text: "View as website".toUpperCase(),
+                                      text: "View demo".toUpperCase(),
                                       onTap: () {
                                         launchURLString(project['netlify']!,context);
                                       },
